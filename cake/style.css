@@ -1,0 +1,137 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #35344e;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    /* border: white 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mould {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    top: 150px;
+    border-radius: 0 0 20px 20px / 0 0 20px 20px;
+}
+
+.mould::before, .mould::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 90px 0;
+    border-color: transparent yellow transparent transparent;
+    border-radius: 0 0 20% 20% / 0 0 20% 20%;
+}
+
+.mould::after {
+    left: 295px;
+    border-width: 90px 10px 0 0;
+    border-color: yellow transparent transparent transparent;
+}
+
+.mould-top {
+    position: relative;
+    content: "";
+    width: 350px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 10px 10px 20px 20px / 10px 10px 20px 20px;
+    top: -10px;
+    left: -25px;
+}
+
+.mould-top::before, .mould-top::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 10px;
+    top: 10px;
+    left: -5px;
+    background-color: #35344e;
+    border-radius: 0 50% 0 0 / 0 50% 0 0;
+}
+
+.mould-top::after {
+    border-radius: 50% 0 0 0 / 50% 0 0 0;
+    left: 330px;
+}
+
+.cake {
+    position: relative;
+    width: 290px;
+    height: 90px;
+    background-color: orange;
+    /* top: -8px; */
+    top: -20px;
+    left: 30px;
+    border-radius: 20px 20px 0 0 / 20px 20px 0 0;
+    z-index: -10;
+    animation: cooking 4s linear infinite;
+}
+
+.cake::before {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 90px;
+    background-color: orange;
+    /* top: -25px; */
+    top: 5px;
+    left: 0px;
+    border-radius: 50% 50% 0 0 / 50px 50px 50% 50%;
+    animation: backing-powder 4s linear infinite;
+}
+
+.cake::after {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 90px;
+    background-color: orange;
+    top: 5px;
+    left: 120px;
+    border-radius: 50% 50% 50% 50% / 50px 50px 0 0;
+    animation: backing-powder 4s linear infinite;
+}
+
+@keyframes cooking {
+    from {
+        top: 0;
+    }
+
+    to {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes backing-powder {
+    from {
+        /* top: 10px; */
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    to {
+        /* top: -25px; */
+        transform: translateY(-20px);
+    }
+}

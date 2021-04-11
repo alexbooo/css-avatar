@@ -1,0 +1,397 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    color: red;
+    width: 50vw;
+    height: 100vh;
+    /* background-color:powderblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-image: url("head.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 600px;
+}
+
+.head {
+    /* background-color: currentColor; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border-radius: 42% 44% 45% 48% / 36% 44% 37% 44% ;
+    border: 5px solid currentColor;
+    /* clip-path: 
+    polygon(56% 53%, 0% 100%, 100% 100%); */
+    /* box-shadow: 4px 3px 1px 1px currentColor, 
+    -0px -4px 1px 1px currentColor; */
+}
+
+.hair-top {
+    position: absolute;
+    /* background: green; */
+    width: 80px;
+    height: 20px;
+    /* border: 2px solid green; */
+    border-radius: 38% 44% 43% 25% / 78% 47% 85% 100% ;
+    box-shadow: 4px 2px 1px 1px currentColor;
+    top: 0;
+    left: 0;
+    margin-top: -23px;
+    margin-left: 80px;
+}
+
+.head-hides {
+    position: relative;
+}
+
+.head-hide1 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    left: -40px;
+    top: -10px;
+    /* margin-top: -200px;
+    margin-left: -80px; */
+}
+
+.head-hide2 {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    border-radius: 10px;
+    background: white;
+    left: 76px;
+    top: -45px;
+}
+
+.head-hide3 {
+    position: relative;
+    width: 100px;
+    height: 170px;
+    background: white;
+    border-radius: 20px;
+    left: -100px;
+    top: 60px;
+}
+
+
+
+.shadows {
+    /* background-color: red; */
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    margin-top: 34px;
+    margin-left: 32px;
+    z-index: 10;
+    display: flex;
+    /* border: 2px solid red; */
+    /* justify-content: space-evenly; */
+}
+
+.shadow {
+    /* background-color: blue; */
+    width: 30px;
+    height: 40px;
+    width: 10px;
+    height: 30px;
+    border-radius: 53% 29% 0% 100% / 47% 0% 100% 54%  ;
+    box-shadow: -4px 4px 1px 1px currentColor;
+    transform: rotate(30deg);
+}
+
+.shadows-right {
+    display: flex;
+    margin-top: -10px;
+    margin-left: 140px;
+    transform: rotate(120deg);
+}
+
+.hairs {
+    /* background-color: red; */
+    position: absolute;
+    width: 120px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    margin-top: 120px;
+    margin-left: 120px;
+    z-index: 10;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.hair1 {
+    width: 30px;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-radius: 50%;
+    box-shadow: -3px 4px 1px 1px currentColor;
+    transform: rotate(30deg);
+    margin-left: -25px;
+}
+
+.hair2 {
+    /* background-color: blue; */
+    width: 30px;
+    height: 60px;
+    border-radius: 23% 56% 42% 57% / 40% 15% 62% 60%   ;
+    box-shadow: -4px 2px 1px 1px currentColor, -4px 4px currentColor;
+    transform: rotate(-40deg);
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.hair3 {
+    /* background-color: blue; */
+    width: 15px;
+    height: 40px;
+    border-radius: 23% 56% 42% 57% / 40% 15% 62% 60%;
+    box-shadow: -4px 2px 1px 1px currentColor, -4px 4px currentColor;
+    transform: rotate(-30deg);
+    margin-top: 6px;
+    margin-left: 14px;
+}
+
+.hair4 {
+    width: 10px;
+    height: 30px;
+    border-radius: 23% 56% 42% 57% / 40% 15% 62% 60%;
+    box-shadow: -4px 2px 1px 1px currentColor, -4px 4px currentColor;
+    transform: rotate(-40deg);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.hairs-right {
+    /* background-color: blue; */
+    position: absolute;
+    width: 40px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 230px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+.hair-right1 {
+    /* background-color: blue; */
+    width: 20px;
+    height: 70px;
+    border-radius: 53% 29% 0% 100% / 47% 0% 100% 54%  ;
+    box-shadow: -4px 4px 1px 1px currentColor;
+    margin-left: 10px;
+}
+
+.hair-right2 {
+    width: 10px;
+    height: 70px;
+    border-radius: 53% 29% 0% 100% / 47% 0% 100% 54%  ;
+    box-shadow: -4px 4px 1px 1px currentColor;
+    /* margin-left */
+}
+
+.hair-right3 {
+    width: 10px;
+    height: 20px;
+    border-radius: 53% 29% 0% 100% / 47% 0% 100% 54%  ;
+    box-shadow: -4px 4px 1px 1px currentColor;
+    margin-top: -5px;
+    margin-left: -40px;
+}
+
+.hair-right4 {
+    width: 10px;
+    height: 20px;
+    border-radius: 53% 29% 0% 100% / 47% 0% 100% 54%  ;
+    box-shadow: -4px 4px 1px 1px currentColor;
+    margin-top: -10px;
+    margin-left: -66px;
+}
+
+.hairs-left {
+    /* background-color: blue; */
+    position: absolute;
+    width: 80px;
+    height: 180px;
+    top: 0;
+    left: 0;
+    margin-top: 90px;
+    margin-left: 0px;
+
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid blue; */
+}
+
+.hair-left1 {
+    /* background-color: blue; */
+    width: 20px;
+    height: 110px;
+    border-radius: 38% 35% 88% 0% / 47% 0% 100% 54%   ;
+    box-shadow: 4px 2px 1px 1px currentColor;
+    margin-left: -25px;
+}
+
+.hair-left2 {
+    /* background-color: blue; */
+    width: 20px;
+    height: 50px;
+    border-radius: 38% 35% 55% 57% / 47% 0% 100% 54%;
+    box-shadow: 4px 2px 1px 1px currentColor;
+    /* margin-left: -24px; */
+    margin-top: 80px;
+}
+
+.hair-left3 {
+    /* background-color: blue; */
+    width: 15px;
+    height: 60px;
+    border-radius: 38% 35% 55% 57% / 47% 0% 100% 54%;
+    box-shadow: 4px 2px 1px 1px currentColor;
+    margin-left: 5px;
+    margin-top: 86px;
+}
+
+.hair-left4 {
+    /* background-color: blue; */
+    width: 20px;
+    height: 90px;
+    border-radius: 38% 35% 55% 57% / 47% 0% 100% 54%;
+    box-shadow: 4px 2px 1px 1px currentColor;
+    margin-left: 15px;
+    margin-top: 64px;
+    transform: rotate(-4deg);
+}
+
+.eyes {
+    /* background-color: yellow; */
+    position: absolute;
+    height: 10px;
+    width: 84px;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-top: 178px;
+    margin-left: 112px;
+    justify-content: space-between;
+}
+
+.eye {
+    background-color: currentColor;
+    width: 8px;
+    height: 20px;
+    border-radius: 40% 40% 40% 40% / 46% 46% 45% 46% ;
+}
+
+.eyes :nth-child(2) {
+    /* background-color: blue; */
+    margin-top: 3px;
+}
+
+.mouth {
+    /* background-color: blue; */
+    position: absolute;
+    width: 105px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    margin-top: 202px;
+    margin-left: 94px;
+    border: 5px solid currentColor;
+    border-radius: 0% 0% 42% 52% / 0% 0% 80% 80%;
+
+    -webkit-clip-path: polygon(10% 98%, 52% 99%, 88% 99%, 100% 77%, 100% 45%, 82% 39%, 44% 36%, 0 41%, 0 63%);
+    clip-path: polygon(10% 98%, 52% 99%, 88% 99%, 100% 77%, 100% 45%, 82% 39%, 44% 36%, 0 41%, 0 63%);
+}
+
+.ears {
+    /* background-color: yellow; */
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    margin-top: 194px;
+    margin-left: 54px;
+    /* border: 2px solid blue; */
+    display: flex;
+}
+
+.ear {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 
+    -4px 4px 1px 2px currentColor, 
+    inset 2px 6px transparent;
+    transform: rotate(50deg);
+    /* margin-top: 6px;
+    margin-left: 14px; */
+    overflow: hidden;
+}
+.in-ear {
+    /* background-color: green; */
+    width: 20px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: inset -4px 4px currentColor;
+    margin-top: 16px;
+    margin-left: -3px;
+    transform: rotate(-90deg);
+}
+
+.ears :nth-child(2) {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 4px -4px 1px 2px currentColor;
+    transform: rotate(50deg);
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.item {
+    position: absolute;
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    /* top: 10rem; */
+    /* margin-top: 140px; */
+}
